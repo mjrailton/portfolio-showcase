@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
 import Navigation from './components/Navigation'
 import Home from './pages/Home'
 import ElevateDanceAcademy from './pages/ElevateDanceAcademy'
@@ -14,6 +15,7 @@ function App() {
         <Route path="/case-study/elevate-dance-academy" element={<ElevateDanceAcademy />} />
         <Route path="/case-study/blush-and-bloom" element={<BlushAndBloom />} />
       </Routes>
+      <Analytics />
     </Router>
   )
 }
