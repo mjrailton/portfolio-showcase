@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, CheckCircle, Zap, TrendingUp, Users, BarChart3, Phone } from 'lucide-react'
+import { ArrowRight, CheckCircle, Zap, TrendingUp, Users, Phone } from 'lucide-react'
+import ContactForm from '../components/ContactForm'
 import './Home.css'
 
 export default function Home() {
@@ -16,8 +17,8 @@ export default function Home() {
             Premium web design and digital strategy for ambitious businesses. We create websites that don't just look exceptional—they drive measurable results.
           </p>
           <div className="hero-cta">
-            <button className="btn btn-primary">Schedule a Consultation</button>
-            <button className="btn btn-secondary">View Our Work</button>
+            <a href="#contact" className="btn btn-primary" style={{textDecoration: 'none', display: 'inline-flex'}}>Schedule a Consultation</a>
+            <a href="#services" className="btn btn-secondary" style={{textDecoration: 'none', display: 'inline-flex'}}>View Our Work</a>
           </div>
           <div className="hero-stats">
             <div className="stat">
@@ -120,7 +121,7 @@ export default function Home() {
             {/* Elevate Dance Academy */}
             <Link to="/case-study/elevate-dance-academy" className="case-study-card">
               <div className="case-study-image" style={{ background: 'linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%)' }}>
-                <BarChart3 size={48} color="white" />
+                <TrendingUp size={48} color="white" />
               </div>
               <div className="case-study-content">
                 <h3>Elevate Dance Academy</h3>
@@ -139,7 +140,7 @@ export default function Home() {
             {/* Blush & Bloom Studio */}
             <Link to="/case-study/blush-and-bloom" className="case-study-card">
               <div className="case-study-image" style={{ background: 'linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%)' }}>
-                <BarChart3 size={48} color="white" />
+                <TrendingUp size={48} color="white" />
               </div>
               <div className="case-study-content">
                 <h3>Blush & Bloom Studio</h3>
@@ -158,7 +159,7 @@ export default function Home() {
             {/* Placeholder Case Study */}
             <div className="case-study-card placeholder">
               <div className="case-study-image" style={{ background: 'linear-gradient(135deg, #2d2d2d 0%, #3d3d3d 100%)' }}>
-                <BarChart3 size={48} color="white" />
+                <TrendingUp size={48} color="white" />
               </div>
               <div className="case-study-content">
                 <h3>Your Brand Here</h3>
@@ -239,16 +240,21 @@ export default function Home() {
             <h2>Ready to Elevate Your Brand?</h2>
             <p>Let's discuss how MJR Studio can transform your digital presence.</p>
             <div className="cta-buttons">
-              <button className="btn btn-primary btn-large">
+              <a href="#contact" className="btn btn-primary btn-large" style={{textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.5rem'}}>
                 <Phone size={20} />
                 Schedule a Consultation
-              </button>
-              <button className="btn btn-secondary btn-large">
+              </a>
+              <a href="#contact" className="btn btn-secondary btn-large" style={{textDecoration: 'none', display: 'inline-flex'}}>
                 Send an Inquiry
-              </button>
+              </a>
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact">
+        <ContactForm />
       </section>
 
       {/* Footer */}
