@@ -38,7 +38,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="services">
+      <section className="services" id="services">
         <div className="container">
           <div className="section-header">
             <h2>Our Services</h2>
@@ -46,64 +46,102 @@ export default function Home() {
           </div>
 
           <div className="services-grid">
-            {/* Website Refresh */}
+            {/* Starter Website Refresh */}
             <div className="service-card">
               <div className="service-icon">
                 <Zap size={32} />
               </div>
-              <h3>Website Refresh</h3>
-              <p className="service-price">$3,500 - $5,500</p>
+              <h3>Starter Website Refresh</h3>
+              <p className="service-price">$500 - $1,200</p>
               <p className="service-description">
-                Modernize your existing website with refined design, enhanced performance, and conversion optimization.
+                For businesses that already have a website but need improvement.
               </p>
               <ul className="service-features">
-                <li><CheckCircle size={18} /> Modern, elegant design</li>
-                <li><CheckCircle size={18} /> Performance optimization</li>
-                <li><CheckCircle size={18} /> Conversion-focused layout</li>
-                <li><CheckCircle size={18} /> SEO enhancement</li>
+                <li><CheckCircle size={18} /> Homepage redesign or refresh</li>
+                <li><CheckCircle size={18} /> Mobile optimization</li>
+                <li><CheckCircle size={18} /> Basic SEO improvements</li>
+                <li><CheckCircle size={18} /> Stronger calls-to-action</li>
+                <li><CheckCircle size={18} /> Contact form setup</li>
               </ul>
               <button className="btn btn-outline">Learn More</button>
             </div>
 
-            {/* Premium Website */}
+            {/* Growth Website */}
             <div className="service-card featured">
               <div className="badge">Most Popular</div>
               <div className="service-icon">
                 <TrendingUp size={32} />
               </div>
-              <h3>Premium Website</h3>
-              <p className="service-price">$6,500 - $12,000</p>
+              <h3>Growth Website</h3>
+              <p className="service-price">$1,500 - $3,000</p>
               <p className="service-description">
-                Custom-crafted website designed to attract your ideal clients and convert them into loyal customers.
+                Full website build for local businesses that want more customers.
               </p>
               <ul className="service-features">
-                <li><CheckCircle size={18} /> Custom design & development</li>
-                <li><CheckCircle size={18} /> Advanced optimization</li>
-                <li><CheckCircle size={18} /> Booking/inquiry system</li>
-                <li><CheckCircle size={18} /> SEO & analytics</li>
-                <li><CheckCircle size={18} /> Full support & training</li>
+                <li><CheckCircle size={18} /> 5–10 page website</li>
+                <li><CheckCircle size={18} /> Mobile-first design</li>
+                <li><CheckCircle size={18} /> SEO setup</li>
+                <li><CheckCircle size={18} /> Google Maps integration</li>
+                <li><CheckCircle size={18} /> Contact / booking forms</li>
+                <li><CheckCircle size={18} /> Testimonials + review sections</li>
               </ul>
               <button className="btn btn-primary">Get Started</button>
             </div>
 
-            {/* Ongoing Partnership */}
+            {/* Growth Accelerator */}
             <div className="service-card">
               <div className="service-icon">
                 <Users size={32} />
               </div>
-              <h3>Ongoing Partnership</h3>
-              <p className="service-price">$1,500 - $3,500/mo</p>
+              <h3>Growth Accelerator</h3>
+              <p className="service-price">$3,000 - $6,000+</p>
               <p className="service-description">
-                Long-term partnership to continuously refine your digital presence and maximize growth.
+                Full website + systems to generate leads and automate growth.
               </p>
               <ul className="service-features">
-                <li><CheckCircle size={18} /> Monthly optimization</li>
-                <li><CheckCircle size={18} /> Performance analytics</li>
-                <li><CheckCircle size={18} /> Content management</li>
-                <li><CheckCircle size={18} /> A/B testing & refinement</li>
-                <li><CheckCircle size={18} /> Priority support</li>
+                <li><CheckCircle size={18} /> Everything in Growth Website</li>
+                <li><CheckCircle size={18} /> Google Business Profile optimization</li>
+                <li><CheckCircle size={18} /> AI chatbot or automation tools</li>
+                <li><CheckCircle size={18} /> Email capture + follow-up system</li>
+                <li><CheckCircle size={18} /> Review generation system</li>
               </ul>
               <button className="btn btn-outline">Learn More</button>
+            </div>
+          </div>
+
+          {/* Monthly Retainers */}
+          <div className="retainers-section">
+            <h3>Monthly Retainers</h3>
+            <p>Ongoing support to keep your growth on track</p>
+            <div className="retainers-grid">
+              <div className="retainer-card">
+                <h4>Website Care Plan</h4>
+                <p className="retainer-price">$99 - $199/month</p>
+                <ul>
+                  <li><CheckCircle size={16} /> Updates</li>
+                  <li><CheckCircle size={16} /> Fixes</li>
+                  <li><CheckCircle size={16} /> Maintenance</li>
+                </ul>
+              </div>
+              <div className="retainer-card">
+                <h4>Growth Plan</h4>
+                <p className="retainer-price">$299 - $599/month</p>
+                <ul>
+                  <li><CheckCircle size={16} /> SEO updates</li>
+                  <li><CheckCircle size={16} /> Content updates</li>
+                  <li><CheckCircle size={16} /> Basic growth optimization</li>
+                </ul>
+              </div>
+              <div className="retainer-card">
+                <h4>Marketing Partner</h4>
+                <p className="retainer-price">$750 - $2,000+/month</p>
+                <ul>
+                  <li><CheckCircle size={16} /> Ongoing SEO</li>
+                  <li><CheckCircle size={16} /> Lead generation systems</li>
+                  <li><CheckCircle size={16} /> Automation + reporting</li>
+                  <li><CheckCircle size={16} /> Full digital support</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -181,16 +219,12 @@ export default function Home() {
       {/* About Section */}
       <section className="about">
         <div className="container">
-          <div className="about-content">
-            <div className="about-text">
+          <div className="about-grid">
+            <div className="about-content">
               <h2>Why Choose MJR Studio</h2>
-              <p>
-                We're not just designers. We're strategic partners dedicated to elevating your brand and driving tangible business results. Every project we undertake is approached with meticulous attention to detail and a commitment to excellence.
-              </p>
-              <p>
-                Our methodology combines aesthetic sophistication with data-driven strategy, ensuring your digital presence not only captivates but converts.
-              </p>
-              <div className="about-features">
+              <p>We're not just designers. We're strategic partners dedicated to elevating your brand and driving tangible business results. Every project we undertake is approached with meticulous attention to detail and a commitment to excellence.</p>
+              <p>Our methodology combines aesthetic sophistication with data-driven strategy, ensuring your digital presence not only captivates but converts.</p>
+              <div className="features">
                 <div className="feature">
                   <CheckCircle size={24} className="feature-icon" />
                   <div>
